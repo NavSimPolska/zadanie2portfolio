@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Title{% endblock %}</title>
+    </head>
+
+    <body style="background-color: lightGrey; font-family: Calibri">
+    <h1>Jacek Pietraszkiewicz</h1>
+
+    <div id="header" style="background-color: #00363a; padding: 10px; box-shadow: 3px 3px grey; margin-bottom: 10px">
+        {% block header %}
+         # Blok wstawiany z Operation.html #
+        {% endblock %}
+    </div>
+    <div id="main">
+        {% block main %}
+         # Blok wstawiany z main.html #
+        {% endblock %}
+    </div>
+    </body>
+</html>

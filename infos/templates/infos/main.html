@@ -1,0 +1,18 @@
+{% extends "infos/operation.html" %}
+{% block main %}
+{% if title == "Homepage" %}
+           <h1>
+              WITAJ
+             <br>
+
+           </h1>
+        {% elif title == "O mnie" %}
+           <h2>
+               O MNIE
+           </h2>
+        {% elif title == "Kontakt ze mną" %}
+           <h2>
+               CONTACT
+           </h2>
+        {% endif %}
+{% endblock %}}

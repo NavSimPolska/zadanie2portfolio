@@ -2,10 +2,16 @@ from django.http import HttpResponse
 from django.template import Context, loader
 
 def main(request):
-   return HttpResponse("Tu będzie Home")
+   t = loader.get_template("infos/main.html")
+   c = {"title": "Homepage"}
+   return HttpResponse(t.render(c))
 
 def me(request):
-   return HttpResponse("Tu będzie O mnie")
+   t = loader.get_template("infos/main.html")
+   c = {"title": "O mnie"}
+   return HttpResponse(t.render(c))
 
 def contact(request):
-   return HttpResponse("Tu będzie Contact")
+   t = loader.get_template("infos/main.html")
+   c = {"title": "Kontakt ze mną"}
+   return HttpResponse(t.render(c))
