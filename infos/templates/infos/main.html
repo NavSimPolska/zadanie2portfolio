@@ -1,18 +1,38 @@
 {% extends "infos/operation.html" %}
 {% block main %}
 {% if title == "Homepage" %}
-           <h1>
-              WITAJ
-             <br>
+            <h1 style="margin-left: 50px">WITAJ</h1>
+               <img src="https://www.radiowroclaw.pl/img/articles/86527/AXjCC27659.jpg" alt="Jacek Pietraszkiewicz"
+                    style="height: 300px; float: left; border-radius: 10px; margin: 10px; margin-left: 50px"><br>
 
-           </h1>
-        {% elif title == "O mnie" %}
-           <h2>
-               O MNIE
-           </h2>
-        {% elif title == "Kontakt ze mną" %}
-           <h2>
-               CONTACT
-           </h2>
+               <p style="font-size: 25px">To jest moja strona napisana w Django. Nie jest doskonała, ale całkowicie moja :).<br>
+                   Znajdziesz na niej informacje <a href="http://localhost:8000/me"><b>o mnie</b></a> i czym się zajmuję. Jeśli będziesz chciał się ze mną skontaktować,
+                   nie wahaj się kliknąć w  sekcję <b>Contact</b></p>
+{% elif title == "O mnie" %}
+            <h1 style="margin-left: 50px">O MNIE</h1>
+               <p style="font-size: 25px; margin-left: 50px">Jestem prezesem Zarządu NavSim Polska. <br>Od samego początku firma działa na
+                   profesjonalnym rynku morskim w obszarze „e-navigation”. Firma skupia się na wytwarzaniu
+                   własnego oprogramowania IV generacji. W kolejnych latach NavSim Polska stworzył oprogramowanie
+                   meteorologiczne dla potrzeb bezpieczeństwa morskiego oraz rozwijał własne oprogramowanie nawigacyjne
+                   wysokiej precyzji. <br>Po udanych wdrożeniach systemównawigacyjnych na promach pasażerskich PŻM, w
+                   2014 r. firma weszła w skład konsorcjum, projektując nowoczesny system nawigacyjny dla potrzeb
+                   wprowadzania i manewrowania <i>gazowcami</i> w świnoujskim Gazoporcie. Zdobyte tam doświadczenia
+                   przełożyła na model biznesowy produkując innowacyjne systemy nawigacyjne, pozwalające na manewrowanie
+                   statkami w portach, praktycznie bez jakiejkolwiek widzialności optycznej. Wszystkie statki LNG wchodzące
+                   do Świnoujścia korzystają dziś z technologii NavSim. Firma obecnie produkuje oprogramowanie
+                   nawigacyjne, skutecznie wdraża i komercjalizuje swoje produkty elektroniczne realizując ideę <i>e-navigation</i>
+                   w Polsce, Danii, Wielkiej Brytanii, USA i na platformach wiertniczych.</p>
+
+{% elif title == "Kontakt ze mną" %}
+            <h1 style="margin-left: 50px">KONTAKT</h1>
+            <p style="font-size: 25px; margin-left: 50px">Imię i nazwisko (wymagane)</p>
+            <form style="margin-left: 50px;" action="*">
+                <input type="text" name="nazwisko" size="100" maxlength="30"></form>
+
+            <p style="font-size: 25px; margin-left: 50px">Adres e-mail (wymagane)</p>
+            <form style="margin-left: 50px;" action="*">
+                <input type="text" name="email" size="100" maxlength="30"></form>
+            <br><form action="*" style="font-size: 25px; margin-left: 50px"><button type="submit">Wyślij formularz</button></form>
+
         {% endif %}
 {% endblock %}}
