@@ -2,12 +2,13 @@
 {% block main %}
 {% if title == "Homepage" %}
             <h1 style="margin-left: 50px">WITAJ</h1>
-               <img src="https://www.radiowroclaw.pl/img/articles/86527/AXjCC27659.jpg" alt="Jacek Pietraszkiewicz"
-                    style="height: 300px; float: left; border-radius: 10px; margin: 10px; margin-left: 50px"><br>
+            <img src="https://www.radiowroclaw.pl/img/articles/86527/AXjCC27659.jpg" alt="Jacek Pietraszkiewicz"
+                 style="height: 300px; float: left; border-radius: 10px; margin: 10px; margin-left: 50px"><br>
 
-               <p style="font-size: 25px">To jest moja strona napisana w Django. Nie jest doskonała, ale całkowicie moja :).<br>
-                   Znajdziesz na niej informacje <a href="http://localhost:8000/me"><b>o mnie</b></a> i czym się zajmuję. Jeśli będziesz chciał się ze mną skontaktować,
-                   nie wahaj się kliknąć w  sekcję <b>Contact</b></p>
+               <p style="font-size: 25px">
+                   To jest moja strona napisana w Django. Nie jest doskonała, ale całkowicie moja :).<br>
+                   Znajdziesz na niej informacje <a href="http://localhost:8000/me" style="text-decoration: none"><b>o mnie</b></a> i czym się zajmuję. Jeśli będziesz chciał się ze mną skontaktować,
+                   nie wahaj się kliknąć w  sekcję <a href="http://localhost:8000/contact" style="text-decoration: none"><b>Contact</b></a></p>
 {% elif title == "O mnie" %}
             <h1 style="margin-left: 50px">O MNIE</h1>
                <p style="font-size: 25px; margin-left: 50px">Jestem prezesem Zarządu NavSim Polska. <br>Od samego początku firma działa na

@@ -5,15 +5,15 @@
 {% block header %}
 {% if title == "Homepage" %}
            <h2>
-               <span style="color: #ffffff ">Home&nbsp&nbsp&nbsp</span><span style="color: #444444"><a href="http://localhost:8000/me" style="text-decoration: none">Me</a>&nbsp&nbsp&nbsp<a href="http://localhost:8000/contact" style="text-decoration: none">Contact</a></span>
+               <span style="color: #ffffff ">Home&nbsp&nbsp&nbsp</span><span style="color: #444444"><a href="http://localhost:8000/me" style="text-decoration: none; color: #444444">Me</a>&nbsp&nbsp&nbsp<a href="http://localhost:8000/contact" style="text-decoration: none; color: #444444">Contact</a></span>
            </h2>
-        {% elif title == "O mnie" %}
+{% elif title == "O mnie" %}
            <h2>
-               <span style="color: #444444"><a href="http://localhost:8000/" style="text-decoration: none">Home</a>&nbsp&nbsp&nbsp</span><span style="color: #ffffff ">Me&nbsp&nbsp&nbsp</span><span style="color: #444444"><a href="http://localhost:8000/contact" style="text-decoration: none">Contact</a></span>
+               <a href="http://localhost:8000/" style="text-decoration: none; color: #444444">Home</a>&nbsp&nbsp&nbsp<span style="color: #ffffff ">Me&nbsp&nbsp&nbsp</span><a href="http://localhost:8000/contact" style="text-decoration: none; color: #444444">Contact</a>
            </h2>
-        {% elif title == "Kontakt ze mną" %}
+{% elif title == "Kontakt ze mną" %}
            <h2>
-               <span style="color: #444444"><a href="http://localhost:8000/" style="text-decoration: none">Home</a>&nbsp&nbsp&nbsp<a href="http://localhost:8000/me" style="text-decoration: none">Me</a>&nbsp&nbsp&nbsp</span><span style="color: #ffffff">Contact</span>
+               <a href="http://localhost:8000/" style="text-decoration: none; color: #444444">Home</a>&nbsp&nbsp&nbsp<a href="http://localhost:8000/me" style="text-decoration: none; color: #444444">Me</a>&nbsp&nbsp&nbsp</span><span style="color: #ffffff">Contact</span>
            </h2>
         {% endif %}
 {% endblock %}}
