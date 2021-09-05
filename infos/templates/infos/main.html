@@ -27,7 +27,7 @@
 
     {% elif title == "Kontakt ze mną" %}
             <h1 style="margin-left: 50px">KONTAKT</h1>
-            <form style="margin-left: 50px;" action="/">
+            <form style="margin-left: 50px;" action="thanks/">
                 <p style="font-size: 25px; margin-left: 50px">Imię i nazwisko (wymagane)</p>
                 <label for="name"></label>
                 <input style="font-size: 25px; margin-left: 50px" type="text" id="name" name="name"><br>
@@ -38,6 +38,10 @@
 
                 <input type="submit" value="send" style="font-size: 25px; margin-left: 50px">
             </form>
+
+    {% elif title == "Dziekuje" %}
+            <h1 style="margin-left: 50px"><a href="http://localhost:8000/" style="text-decoration: none"><b>DZIĘKUJĘ</b></a></h1>
+
 
     {% endif %}
 {% endblock %}}
